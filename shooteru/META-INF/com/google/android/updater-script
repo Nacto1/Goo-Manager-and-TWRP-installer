@@ -1,14 +1,14 @@
 ui_print(" ");
 ui_print(" ");
 ui_print("-------------");
-ui_print("Ensuring you have a tbolt ;)");
-ui_print("If it fails here you either don't have a");
-ui_print("tbolt or you messed with your properties");
+ui_print("If it fails here you either don't");
+ui_print("have the correct device, or you");
+ui_print("messed with your properties.");
 ui_print("-------------");
 ui_print(" ");
 ui_print(" ");
-assert(getprop("ro.product.device") == "mecha" ||
-       getprop("ro.build.product") == "mecha");
+assert(getprop("ro.product.device") == "shooteru" ||
+       getprop("ro.build.product") == "shooteru");
 ui_print(" ");
 ui_print(" ");
 ui_print(" ");
@@ -40,7 +40,6 @@ ui_print(" ");
 package_extract_file("recovery.img", "/tmp/recovery.img");
 write_raw_image("/tmp/recovery.img", "recovery");
 delete("/tmp/recovery.img");
-ui_print("");
 ui_print("Installing GooManager...");
 ui_print(" ");
 mount("ext3", "EMMC", "/dev/block/mmcblk0p26", "/data");
