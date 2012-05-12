@@ -1,6 +1,6 @@
 Recovery Zip that installs the Team Win Recovery Project (TWRP) and the GooManager app.
-               ***ALL DEVICES BUT MECHA PROBABLY WILL NOT WORK!!!***
+    All devices but mecha and blaze will probably not install GooManager correctly.
                          ***FLASH AT YOUR OWN RISK!!!!***
                Let me know if one works. Email lukeafrazier@gmail.com
 
-       I need the /data partition (/dev/block/mmcblkXpXX) for all devices but mecha.
+ I need the /data partition (/dev/block/mmcblkXpXX) for all devices but mecha and blaze.
